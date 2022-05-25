@@ -1,0 +1,54 @@
+.nav a {
+    float: left;
+    text-align: center;
+    display: block;
+    color: lightgrey;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    font-size:2rem;
+    background-color:grey;
+    margin: 0 auto;
+    transition: background 0.5s linear;
+
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:grey;
+    border-radius: 20px;
+}
+
+.nav .icon {
+    display: none;
+}
+
+.nav a:hover {
+    background-color:yellowgreen;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

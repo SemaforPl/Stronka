@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(64, 161, 161), rgb(78, 76, 226));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    padding: 64px;
+}
+#main {
+   background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 64px;
+}
+.logo{float: right;}
+.tekst_glowna{font-size:2rem;font-family: Comic Sans MS;}
+iframe{border:solid 3px rgba(255, 255, 255, 0.9);border-radius: 15px;}
+
+.logo{width:30%;}
